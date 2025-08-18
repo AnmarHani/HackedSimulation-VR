@@ -236,6 +236,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7212807567374210933}
+        m_TargetAssemblyTypeName: UnityEngine.UI.RawImage, UnityEngine.UI
+        m_MethodName: set_texture
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2800000, guid: a553f8b6f96a70b44adea0f76c6ad5d5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1582870154}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &216892044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,6 +711,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fefc777cbc7ef344a2b4791b665e841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1582870154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5635949774025038938, guid: 15dbcf3c777b2cf4c8fa27bd642740f6, type: 3}
+  m_PrefabInstance: {fileID: 7212807567374210932}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1657031428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1056,17 @@ PrefabInstance:
       addedObject: {fileID: 1657031429}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15dbcf3c777b2cf4c8fa27bd642740f6, type: 3}
+--- !u!114 &7212807567374210933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8406249076491847777, guid: 15dbcf3c777b2cf4c8fa27bd642740f6, type: 3}
+  m_PrefabInstance: {fileID: 7212807567374210932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
