@@ -19,7 +19,7 @@ public class AppRunner : MonoBehaviour
         Transform child = transform.Find("controls").transform.Find(appName.Split("_")[0] + "_controls");
         child.gameObject.SetActive(true);
         this.currentApp = appName.Split("_")[0];
-
+        Debug.Log(appName);
 
         rawImg.enabled = true;
 
