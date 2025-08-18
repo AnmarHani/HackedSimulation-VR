@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/d7me test scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/AbdulScene/AbdulScene.unity
+    path: Assets/Scenes/Ransomware Scenario Scene.unity
     guid: f4dbff5ecf8caeb42b6fc1b791abf1bf
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 242024f9dc7a8a84384454e66187a2c4, type: 2}
