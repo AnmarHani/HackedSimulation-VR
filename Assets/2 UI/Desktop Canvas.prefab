@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 6901225775599595112}
   - component: {fileID: 8306245528602700060}
   m_Layer: 0
-  m_Name: screen
+  m_Name: Desktop Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
