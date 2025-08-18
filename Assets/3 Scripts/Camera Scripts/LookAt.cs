@@ -2,16 +2,13 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public Vector3 rotationOffset = new Vector3(90, 0, 0);
 
-    // Update is called once per frame
     void LateUpdate()
     {
-        transform.LookAt(Camera.main.transform.position);
-        transform.Rotate(90, 0, 0);
+        if (Camera.main == null) return;
+
+        transform.LookAt(Camera.main.transform);
+        transform.rotation *= Quaternion.Euler(rotationOffset);
     }
 }
