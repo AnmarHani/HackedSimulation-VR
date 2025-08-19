@@ -5,7 +5,8 @@ public class AppRunner : MonoBehaviour
 {
     public GameObject viewApp;
     public GameObject controls;
-    public string currentApp; 
+    public string currentApp;
+    public int Counter = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public void runApp(string appName)
