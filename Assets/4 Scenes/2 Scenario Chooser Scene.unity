@@ -274,6 +274,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4778211696441940833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_RayInteractor
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5033801203051696737, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -378,6 +382,38 @@ PrefabInstance:
     - target: {fileID: 1648707059479949973, guid: 56f9698e03061374495b542066efb33b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159846541466176312, guid: 56f9698e03061374495b542066efb33b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159846541466176312, guid: 56f9698e03061374495b542066efb33b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159846541466176312, guid: 56f9698e03061374495b542066efb33b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2067589764}
+    - target: {fileID: 3159846541466176312, guid: 56f9698e03061374495b542066efb33b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159846541466176312, guid: 56f9698e03061374495b542066efb33b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159846541466176312, guid: 56f9698e03061374495b542066efb33b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChanger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159846541466176312, guid: 56f9698e03061374495b542066efb33b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 1 Main Menu Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159846541466176312, guid: 56f9698e03061374495b542066efb33b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3159846541471954040, guid: 56f9698e03061374495b542066efb33b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -679,7 +715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scenario Chooser Canvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7188899174992377263, guid: 56f9698e03061374495b542066efb33b, type: 3}
+    - {fileID: 5035731910827368798, guid: 56f9698e03061374495b542066efb33b, type: 3}
+    - {fileID: 3159846541467553052, guid: 56f9698e03061374495b542066efb33b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6636540382725374114, guid: 56f9698e03061374495b542066efb33b, type: 3}
     - {fileID: 1820916907668317782, guid: 56f9698e03061374495b542066efb33b, type: 3}
@@ -720,7 +759,7 @@ Transform:
   m_GameObject: {fileID: 910932143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.159, y: 8.506, z: -0.125}
+  m_LocalPosition: {x: -2.159, y: 8.506, z: 0}
   m_LocalScale: {x: 0.21584822, y: 0.21584822, z: 0.21584822}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -989,6 +1028,7 @@ GameObject:
   - component: {fileID: 2067589763}
   - component: {fileID: 2067589762}
   - component: {fileID: 2067589761}
+  - component: {fileID: 2067589764}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1065,6 +1105,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2067589764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067589760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ae7ad913030bc498149c20483c6306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
