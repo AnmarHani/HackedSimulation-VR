@@ -1946,6 +1946,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7843359302537708210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1079641945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1921985618978853421, guid: c98273a47a7b72347b5d0fc341701cfe, type: 3}
+  m_PrefabInstance: {fileID: 7843359302537708206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1093544875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,10 +2125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7072e78aee0974ea58975744ecf9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  appRunner: {fileID: 0}
-  uiText: {fileID: 0}
-  guideMessages: []
-  lastCounter: -2147483648
 --- !u!114 &1197167907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2332,6 +2333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Device Simulator
       objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2371,7 +2376,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7843359302537708207}
+  m_Father: {fileID: 1079641945}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900560910
 GameObject:
@@ -29197,11 +29202,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 874608240}
   m_SourcePrefab: {fileID: 100100000, guid: c98273a47a7b72347b5d0fc341701cfe, type: 3}
---- !u!4 &7843359302537708207 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1921985618978853421, guid: c98273a47a7b72347b5d0fc341701cfe, type: 3}
-  m_PrefabInstance: {fileID: 7843359302537708206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7843359302537708208 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4154659049897263978, guid: c98273a47a7b72347b5d0fc341701cfe, type: 3}
