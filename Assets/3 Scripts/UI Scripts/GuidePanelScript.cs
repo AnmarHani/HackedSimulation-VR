@@ -45,10 +45,7 @@ public class GuidePanelScript : MonoBehaviour
         {
             text.text = "In the motherboard Move Data from storage, to RAM, lastly to the CPU for the downloaded app to work.";
         }
-                if (AppRunner.Counter == 8)
-        {
-            text.text = "HACKED, if there is no backup";
-        }
+
         // This script currently does not have any functionality.
         // It can be used to manage the guide panel UI or other related tasks in the future.
     }
