@@ -6,7 +6,8 @@ public class ComponentsManager : MonoBehaviour
 {
     [Header("Sockets in Order")]
     public XRSocketInteractor[] sockets;
-
+    public GameObject appRunnerObject;
+    
     private int currentSocketIndex = 0;
 
     void Start()
@@ -36,7 +37,20 @@ public class ComponentsManager : MonoBehaviour
             {
                 // Last socket filled
                 GameObject placedObject = args.interactableObject.transform.gameObject;
+                if(placedObject.CompareTag("Data1"))
+                {
+                    appRunnerObject.GetComponent<AppRunner>().increaseCount();
+                }
+                if(placedObject.CompareTag("Data2"))
+                {
+                    appRunnerObject.GetComponent<AppRunner>().increaseCount();
 
+                }
+                if (placedObject.CompareTag("Data3"))
+                {
+                    appRunnerObject.GetComponent<AppRunner>().increaseCount();
+
+                }
                 // Hide the object
                 placedObject.SetActive(false);
 
@@ -46,6 +60,7 @@ public class ComponentsManager : MonoBehaviour
                 // Reset sockets
                 ResetSockets();
             }
+
         }
     }
 
