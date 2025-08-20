@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class AppRunner : MonoBehaviour
@@ -6,77 +6,145 @@ public class AppRunner : MonoBehaviour
     public GameObject viewApp;
     public GameObject controls;
     public GameObject Background;
-    public string currentApp;
-    public static int Counter = 0;
     public GameObject apps;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject close;
+    public static string currentApp;
+    public static int Counter = 0;
+    public bool isLastTask = false;
+    
+    public void increaseCount()
+    {
+       
+        runApp(currentApp); 
+    }
 
- 
 
+    public void showWaiting()
+    {
+
+        controls.SetActive(false);
+        apps.SetActive(false);
+        close.SetActive(false);
+        Debug.Log("lost");
+
+
+
+        RawImage rawImg = Background.GetComponent<RawImage>();
+        Texture2D tex = Resources.Load<Texture2D>("loading");
+
+        rawImg.texture = tex;
+
+
+        rawImg = viewApp.GetComponent<RawImage>();
+        rawImg.enabled = false;
+
+    }
+
+   
+  
+    
     public void runApp(string appName)
     {
-        Counter++;
-        bool isLoading = Counter % 2 != 0;
 
-        if (!isLoading)
+        if (isLastTask)
         {
-            RawImage rawImg = Background.GetComponent<RawImage>();
-            Texture2D tex = Resources.Load<Texture2D>("loading");
-
-            viewApp.SetActive(true);
-            controls.SetActive(true);
-            apps.SetActive(true);
-
-             rawImg = viewApp.GetComponent<RawImage>();
-
-             tex = Resources.Load<Texture2D>(appName);
-
-            rawImg.texture = tex;
-
-            Transform child = transform.Find("controls").transform.Find(appName.Split("_")[0] + "_controls");
-            child.gameObject.SetActive(true);
-            this.currentApp = appName.Split("_")[0];
-            Debug.Log(appName);
-
-            rawImg.enabled = true;
-
-            isLoading = !isLoading;
-            
-        }
-
-        else
-        {
-            viewApp.SetActive(false);
             controls.SetActive(false);
             apps.SetActive(false);
+            close.SetActive(false);
+            Debug.Log("lost");
+
+
 
             RawImage rawImg = Background.GetComponent<RawImage>();
-            Texture2D tex = Resources.Load<Texture2D>("loading");
+            Texture2D tex = Resources.Load<Texture2D>("bg");
+
             rawImg.texture = tex;
 
 
+            rawImg = viewApp.GetComponent<RawImage>();
+            rawImg.enabled = false;
         }
+        else {
 
-        //RawImage rawImg = viewApp.GetComponent<RawImage>();
 
-        //Texture2D tex = Resources.Load<Texture2D>(appName);
+            Counter++;
+            if (!string.IsNullOrEmpty(appName))
+            {
+                currentApp = appName;
+            }
+            currentApp = appName;
 
-        //rawImg.texture = tex;
+            if (Counter == 0)
+            {
 
-        //Transform child = transform.Find("controls").transform.Find(appName.Split("_")[0] + "_controls");
-        //child.gameObject.SetActive(true);
-        //this.currentApp = appName.Split("_")[0];
-        //Debug.Log(appName);
+                return;
+            }
 
-        //rawImg.enabled = true;
+
+
+            else if (Counter % 2 == 0)
+            {
+
+                Debug.Log(currentApp);
+                controls.SetActive(true);
+
+                RawImage rawImg = viewApp.GetComponent<RawImage>();
+
+                Texture2D tex = Resources.Load<Texture2D>(appName);
+
+                rawImg.texture = tex;
+
+                Transform child = transform.Find("controls").transform.Find(appName.Split("_")[0] + "_controls");
+                child.gameObject.SetActive(true);
+
+                if (!appName.Equals("hacked_app"))
+                {
+                    close.SetActive(true);
+                    
+                }
+                else
+                {
+                    isLastTask = true;
+                    controls.SetActive(false);
+                }
+
+
+
+
+
+                rawImg.enabled = true;
+
+            }
+
+            else {
+
+                // viewApp.SetActive(false);
+                showWaiting();
+
+
+
+            }
+
+        }
 
     }
 
     public void closeApp()
     {
+       // Counter++;
         RawImage rawImg = viewApp.GetComponent<RawImage>();
         rawImg.enabled = false;
-        Transform child = transform.Find("controls").transform.Find(currentApp + "_controls");
+        Transform child = transform.Find("controls").transform.Find(currentApp.Split("_")[0] + "_controls");
         child.gameObject.SetActive(false);
+        currentApp = null;
+
+         rawImg = Background.GetComponent<RawImage>();
+        Texture2D tex = Resources.Load<Texture2D>("bg");
+
+        rawImg.texture = tex;
+
+        apps.SetActive(true);
+       
+        
     }
 }
