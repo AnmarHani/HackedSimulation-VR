@@ -13,6 +13,7 @@ public class ComponentsManager : MonoBehaviour
     public GameObject binaryData1;
     public GameObject binaryData2;
     public GameObject binaryData3;
+    public AudioSource binarySound;
 
     public UnityEngine.UI.Text hackedText;
 
@@ -43,6 +44,8 @@ public class ComponentsManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Data1")) {
+
+            binarySound.Play();
             maxTries = 2;
             if (this.gameObject.CompareTag("Storage"))
             {
@@ -65,6 +68,7 @@ public class ComponentsManager : MonoBehaviour
         }      
         
         if (other.CompareTag("Data2")) {
+            binarySound.Play();
             maxTries = 1;
             if (this.gameObject.CompareTag("Storage"))
             {
@@ -75,6 +79,7 @@ public class ComponentsManager : MonoBehaviour
         }        
         
         if (other.CompareTag("Data3")) {
+            binarySound.Play();
             maxTries = 2;
             if (this.gameObject.CompareTag("Storage"))
             {
