@@ -5,21 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/4 Scenes/Test Scenes/d7me test scene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/4 Scenes/4.1 Ransomware Scenario Scene.unity
-    guid: f4dbff5ecf8caeb42b6fc1b791abf1bf
-  - enabled: 1
-    path: Assets/4 Scenes/3 Room Scene.unity
-    guid: 98052051b2173ba4cbe1993c94f65261
   - enabled: 1
     path: Assets/4 Scenes/1 Main Menu Scene.unity
     guid: edf27dcdea1765f42808b396e8e9bf19
   - enabled: 1
     path: Assets/4 Scenes/2 Scenario Chooser Scene.unity
     guid: 223970f07a9042c4f95fd003c8700a52
+  - enabled: 1
+    path: Assets/4 Scenes/3 Room Scene.unity
+    guid: 98052051b2173ba4cbe1993c94f65261
+  - enabled: 1
+    path: Assets/4 Scenes/4.1 Ransomware Scenario Scene.unity
+    guid: f4dbff5ecf8caeb42b6fc1b791abf1bf
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 242024f9dc7a8a84384454e66187a2c4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
