@@ -2885,6 +2885,14 @@ PrefabInstance:
       propertyPath: Loop
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4422064904422249235, guid: 355353f2e91f2a64ebcba9ddfa72bed4, type: 3}
+      propertyPath: MinDistance
+      value: 10.464537
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422064904422249235, guid: 355353f2e91f2a64ebcba9ddfa72bed4, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7508458494844925300, guid: 355353f2e91f2a64ebcba9ddfa72bed4, type: 3}
       propertyPath: m_Name
       value: binarySound
@@ -2981,6 +2989,14 @@ PrefabInstance:
     - target: {fileID: 3355282176858906033, guid: 464c5a65c70095749a15c71d7bca95b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4945128442016825811, guid: 464c5a65c70095749a15c71d7bca95b0, type: 3}
+      propertyPath: MinDistance
+      value: 10.677185
+      objectReference: {fileID: 0}
+    - target: {fileID: 4945128442016825811, guid: 464c5a65c70095749a15c71d7bca95b0, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8830373659632203287, guid: 464c5a65c70095749a15c71d7bca95b0, type: 3}
       propertyPath: m_Name
@@ -3894,6 +3910,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 569285100088036781, guid: a16d2d8606fa96246b0c673e455f2f17, type: 3}
+      propertyPath: MinDistance
+      value: 10.3808
+      objectReference: {fileID: 0}
+    - target: {fileID: 569285100088036781, guid: a16d2d8606fa96246b0c673e455f2f17, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6324241901948819465, guid: a16d2d8606fa96246b0c673e455f2f17, type: 3}
       propertyPath: m_Name
       value: electronicSound
