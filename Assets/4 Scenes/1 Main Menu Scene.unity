@@ -196,6 +196,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2584456509825038313, guid: bf6a7f4d2e511a14da53424a815477ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1064523787}
+    - target: {fileID: 2584456509825038313, guid: bf6a7f4d2e511a14da53424a815477ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584456509825038313, guid: bf6a7f4d2e511a14da53424a815477ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitApp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584456509825038313, guid: bf6a7f4d2e511a14da53424a815477ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuitManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3090271291979453543, guid: bf6a7f4d2e511a14da53424a815477ff, type: 3}
       propertyPath: m_Name
       value: Main Menu
@@ -480,6 +496,7 @@ GameObject:
   - component: {fileID: 1064523784}
   - component: {fileID: 1064523783}
   - component: {fileID: 1064523786}
+  - component: {fileID: 1064523787}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -566,6 +583,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01ae7ad913030bc498149c20483c6306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1064523787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064523782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34475d6a4ce5e149ab7d9b1675e15d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1121209984

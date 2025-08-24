@@ -15,6 +15,8 @@ public class ComponentsManager : MonoBehaviour
     public GameObject binaryData3;
     public AudioSource binarySound;
 
+    public GameObject resetButton;
+
     public UnityEngine.UI.Text hackedText;
 
     private void Update()
@@ -108,6 +110,8 @@ public class ComponentsManager : MonoBehaviour
                     hackedText.text = "You Did not backup, you are hacked.";
 
                     tmp.text = "00000000000000000000000000000";
+
+                    resetButton.SetActive(true);
                 }
             }
         }
